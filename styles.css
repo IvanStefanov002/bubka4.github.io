@@ -1,0 +1,203 @@
+/* Default styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('images/bodybackground.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire body */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: palevioletred;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+}
+
+header .logo {
+    height: 50px;
+    margin-left: 20px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#buttonsDiv {
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+}
+
+#buttonsDiv button {
+    background: purple;
+    height: auto;
+    width: auto; /* Adjust width automatically */
+    color: gold;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 10px; /* Add padding for better appearance */
+    margin: 10px;
+}
+
+header button:hover {
+    background: #218838;
+}
+
+main,
+section {
+    background: pink;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#questionsMAIN button {
+    width: auto;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #75b5f8;
+    color: gold;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f8f9fa;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #dc3545;
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    width: 48%;
+}
+
+/* Media query for 6.1 inch phone */
+@media only screen and (max-width: 828px) {
+    /* Adjust styles for 6.1 inch phone */
+    body {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    header {
+        padding: 5px; /* Adjust padding */
+    }
+
+    header .logo {
+        height: 30px; /* Adjust logo height */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    header h1 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    #buttonsDiv button {
+        padding: 8px 8px; /* Adjust padding */
+    }
+
+    main,
+    section {
+        max-width: 300px; /* Adjust max width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    #questionsMAIN button {
+        padding: 8px 8px; /* Adjust padding */
+    }
+
+    button {
+        font-size: 14px; /* Adjust font size */
+        padding: 8px; /* Adjust padding */
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    label {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    input,
+    select {
+        padding: 8px; /* Adjust padding */
+        margin-top: 5px; /* Adjust margin */
+    }
+
+    li {
+        padding: 8px; /* Adjust padding */
+    }
+
+    li button {
+        padding: 3px 6px; /* Adjust padding */
+    }
+
+    .navigation-buttons button {
+        font-size: 14px; /* Adjust font size */
+    }
+}

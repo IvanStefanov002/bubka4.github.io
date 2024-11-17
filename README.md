@@ -1,2 +1,1 @@
-# bubka4.github.io
-quiz game v2
+# bubka3.github.io
